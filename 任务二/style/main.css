@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+*{border:0;margin:0;padding:0;}
+a{ text-decoration:none;}
+.wrap{background-color:#333333;padding:0 30px;}
+ul li{ list-style:none;}
+/*导航栏*/
+.navBar{height:60px;width:100%;background-color:#333333;}
+.navBar .logo{display:inline-block;float:left;padding:10px 60px;}
+.navBar .navLinks{display:inline-block;float:right; padding:20px 40px;}
+.navBar .navLinks li{display:inline-block;margin-right:20px;}
+.navBar .navLinks li a{color:#fff;font-size:12px; font-weight:bold;}
+.navBar .navLinks li a:hover{color:#999;}
+
+/*内容部分*/
+.content{background-color:#DEDEDE; padding:20px;}
+.content .article{margin:20px 0; background-color:#fff; box-shadow:5px 5px 3px #AEAEAE;padding:20px;}
+.content .article .firstTitle{margin:10px 0;}
+.content .article .secondTitle{color:#666;}
+.content .article .myParagraph{ text-indent:2em;}
+.content .article .publishInfo{color:#666;font-size:15px; margin:10px 0;}
+.content .article .publishInfo span{margin-right:5px;}
+.content .article .myPic{margin:10px 0;}
+.content .article .myList{text-indent:2em; line-height:2em;}
+
+/*图片集*/
+.content .article .picGroup{margin-left:50px;}
+.content .article .picGroup .picItem{width:150px;border:#CBCBCB 1px solid;padding:10px;margin-bottom:10px;}
+.content .article .picGroup .picItem .myPic{height:100px;width:150px;}
+.content .article .picGroup .picItem span{ text-align:center;display:block;}
+
+.content .article .myRank{margin:20px 50px;}
+.content .article .myTable{ width:100%; border-collapse:collapse;/*设置表格的边框，合并为一个单一的边框*/font-size:15px;}
+.content .article .myTable th{border:#CCCCCC 1px solid; text-align:left;padding-left:5px;background-color:#333333;color:#fff;}
+.content .article .myTable td{border:#CCCCCC 1px solid;padding-left:8px;}
+.content .article .myTable .tableCouter{ background-color:#CCCCCC; font-weight:bold;}
+.content .article .myTable td a{ text-decoration:underline;}
+
+/*表单*/
+.content .article .sideBar{border-left:#CCCCCC 3px solid; padding:6px 10px;}
+.content .article .myForm{}
+.content .article .myForm label{ width:35%; float:left; text-align:right; padding-right:15px;}
+.content .article .myForm input[type="text"],.content .article .myForm input[type="password"],.content .article .myForm textarea{ border:#ccc 1px solid;padding:0 3px; color:#000;}
+.content .article .myForm span{margin-left:35%; color:#ccc; font-size:13px;display:block;margin-top:5px;padding-left:15px;}
+.content .article .myForm .citySelect{border:#ccc 1px solid;}
+.content .article .myForm input[type="submit"]{width:100%; padding:10px 0;background-color:#3355D0; border-radius:10px;color:#fff;text-align:center;font-size:15px;font-weight:bold;}
+
+/*尾部*/
+.footer{height:40px;background-color:#000;color:#fff;text-align:center;padding:20px 0;font-size:13px;font-weight:bold;}
+
+
+
+
+
+
+
