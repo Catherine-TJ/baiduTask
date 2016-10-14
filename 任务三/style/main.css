@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+*{border:0;padding:0;margin:0;}
+
+.wrap{margin:0 auto;padding:20px;background-color:#eee; border:#999 1px solid; overflow:auto;}
+
+
+/*团队名称*/
+.teamName{float:left;width:160px;padding:20px; border:#999 1px solid;background-color:#fff; overflow:hidden; }
+.teamName .logo{width:80px;height:80px;float:left;border:#999 1px solid;}
+.teamName .name{width:180px;text-align:center;}/*自动去除左浮动logo的宽度？？？*/
+
+/*先写最右边的浮动，在写中间的内容*/
+
+/*团队照片*/
+.teamPhoto{width:120px;float:right;background-color:#fff; border:#999 1px solid;}
+.teamPhoto img{width:80px;height:80px;display:block;margin:20px;border:#999 1px solid;}
+
+/*团队介绍*/
+.teamProduce{padding:20px;background-color:#fff; margin-left:220px;margin-right:140px;border:#999 1px solid;}
+
+
+
+
+
+
+
+
