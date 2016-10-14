@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+*{border:0;margin:0;margin:0;}
+/*方法一*/
+/*.back{width:400px;height:200px;background-color:#ccc;  position: absolute;top:50%;margin-top:-100px;left:50%;margin-left:-200px;}*/
+
+/*方法二*/
+/*html,body{width:100%;height:100%;}
+.wrap{display:table;width:100%;height:100%;}
+.wrap >div{display:table-cell; vertical-align:middle; }
+.wrap .back{width:400px;height:200px;background-color:#ccc;position:relative;margin:0 auto;}*/
+
+/*方法三*/
+html,body{width:100%;height:100%;}
+.wrap{width:100%;height:100%;display:-webkit-flex;display: flex;
+ justify-content:center;align-items:center;}
+.wrap .back{width:400px;height:200px;background-color:#ccc;position:relative;}
+.back .circle{ position:absolute;width:50px;height:50px;background-color:#fc0;}
+.back .c1{ border-radius:0 0 100% 0;}
+.back .c2{ border-radius:100% 0 0 0;right:0;bottom:0;}
+
+
+
+
+
+
+
