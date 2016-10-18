@@ -1,0 +1,317 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	border: #000 1px solid;
+}
+.wrap {
+	width: 892px;
+	margin: 0 auto;
+}
+/*头部*/
+header {
+	height: 61px;
+	border-bottom: #93828c 2px solid;
+	font-size: 12px;
+	font-family: "黑体";
+	position: relative;
+}
+header .webAddress {
+	width: 110px;
+	height: 100%;
+	background-color: #D55D5C;
+	display: inline-block;
+}
+header .webAddress span {
+	color: #fff;
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+}
+header time {
+	color: #d45d5c;
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+}
+/*第一篇文章*/
+.one {
+	margin: 20px 0;
+}
+.one .title_img {
+	height: 300px;
+	width: 641px;
+	background: url(../images/p1.jpg) top center no-repeat;
+}
+.one .title_img .cover {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.one .title_img:hover .cover {
+	display: block;
+}
+.one .title_img .cover .cov_l {
+	top: 0;
+	left: 0;
+	height: 301px;
+	width: 191px;
+	background-color: rgba(65,140,89,0.5);
+}
+.one .title_img .cover .cov_r {
+	top: 0;
+	right: 0;
+	height: 301px;
+	width: 191px;
+	background-color: rgba(204,118,128,0.5);
+}
+/*one文章侧栏*/
+.one aside {
+	width: 203px;
+	font-family: "微软雅黑";
+}
+.one aside .asideTitle {
+	border-top: #cc8091 2px solid;
+	font-size: 24px;
+	color: #000;
+	text-decoration: underline;
+	line-height: 40px;
+}
+.one aside .asideTitle strong {
+	font-size: 30px;
+}
+.one aside .describe {
+	color: #676767;
+	font-family: "楷体";
+	font-size: 12px;
+	line-height: 10px;
+}
+.one aside .number {
+}
+.one aside .number .firstNum {
+	font-size: 100px;
+	color: #75b86b;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.one aside .number .aboutCss {
+	color: #cc8091;
+}
+.one aside .number .aboutCss .secondNum {
+	font-size: 55px;
+}
+.one aside .number .aboutCss .smallCss {
+	font-size: 21px;
+	bottom: 20px;
+}
+.one aside .number .aboutCss .smallTxt {
+	font-size: 12px;
+	bottom: 10;
+	color: #CCC;
+}
+/*one文章文字部分*/
+.wwh {
+	font-size: 12px;
+	color: #231815;
+	font-family: "微软雅黑";
+	line-height: 16px;
+	opacity: 0.7;
+}
+.wwh h2 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.wwh .what {
+	width: 220px;
+	margin-right: 20px;
+}
+.wwh .what h2 {
+	color: #418c59;
+}
+.wwh .when {
+	width: 190px;
+	margin-right: 20px;
+}
+.wwh .when h2 {
+	color: #d2994f;
+}
+.wwh .how {
+	width: 190px;
+}
+.wwh .how h2 {
+	color: #cc7680;
+}
+.wwh .how .static {
+	margin: 15px 0 0 10px;
+}
+.wwh .how .static span {
+	font-size: 12px;
+	color: #cd4a48;
+}
+/*第二篇文章*/
+.two {
+	margin-top: 40px;
+}
+.two .leftContent {
+	width: 415px;
+}
+.two .leftContent .header {
+	font-family: "黑体";
+	font-weight: bold;
+	border-bottom: #11456C 2px solid;
+	padding-bottom: 16px;
+}
+.two .leftContent .header .english {
+}
+.two .leftContent .header .english .firstWord {
+	font-size: 72px;
+	color: #f5e327;
+}
+.two .leftContent .header .english .otherWord {
+	font-size: 42px;
+	color: #11456b;
+	margin-left: 20px;
+}
+.two .leftContent .header .chinese {
+	font-size: 30px;
+	color: #11456b;
+	font-family: "微软雅黑";
+}
+.two article {
+	margin-top: 40px;
+}
+.two article p {
+	font-size: 12px;
+	color: #767777;
+	font-family: "宋体";
+	line-height: 16px;
+}
+.two article span {
+	font-size: 70px;
+	color: #f5e327;
+	font-family: "微软雅黑";
+	float: left;
+	padding: 20px 15px 30px 0;
+}
+.two article .par_two, .two article .par_three {
+	text-indent: 2em;
+}
+.two article .p1 {
+	width: 167px;
+	height: 288px;
+	padding: 15px 10px 15px 15px;
+	float: right;
+}
+.two .rightContent {
+	width: 458px;
+}
+.two .rightContent .p2 {
+	width: 459px;
+	height: 257px;
+	background: url(../images/p2.jpg) center top no-repeat;
+}
+.two .rightContent .p2 .cover {
+	height: 61px;
+	width: 100%;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+.two .rightContent .p2:hover .cover {
+	display: block;
+}
+.two .rightContent .p2 .cover .covTitle {
+	margin-left: 40px;
+	height: 44px;
+	border-left: #72b16a 3px solid;
+	margin-top: 8px;
+}
+.two .rightContent .p2 .cover .covTitle .bigTitle {
+	color: #fff;
+	font-size: 26px;
+	font-family: "微软雅黑";
+	padding-left: 10px;
+}
+.two .rightContent .p2 .cover .covTitle .smallTitle {
+	font-size: 12px;
+	color: #72b16a;
+	font-family: "微软雅黑";
+}
+.two .rightContent .rightBottom {
+	width: 459px;
+	background-color: #EEEED6;
+	margin-top: 20px;
+}
+.two .rightContent .rightBottom ul {
+	padding: 20px;
+}
+.two .rightContent .rightBottom ul li {
+	line-height: 50px;
+	font-size: 16px;
+	color: #5a5b5b;
+	font-family: "宋体";
+}
+.two .rightContent .rightBottom ul li .triangle {
+	width: 10px;
+	height: 9px;
+	background: url(../images/triganle_03.jpg) top center no-repeat;
+	display: inline-block;
+	margin: 0 10px;
+}
+.two .rightContent .rightBottom ul li .li_right {
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: "宋体";
+}
+.two .rightContent .rightBottom .date {
+	width: 260px;
+	padding:10px 0;
+	background-color: #D55D5C;
+}
+.two .rightContent .rightBottom .date span {
+	font-size: 110px;
+	color: #fff;
+	padding:10px;
+}
+.two .rightContent .rightBottom .date .line {
+	border-left: 2px solid #fff;
+	width: 170px;
+	float: left;
+	margin-top: 40px;
+}
+.two .rightContent .rightBottom .date .line .markOne {
+	font: italic 21px/24px "黑体";
+	color: #fff;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.two .rightContent .rightBottom .date .line .markTwo {
+	font: 12px/10px "黑体";
+	color: #fff;
+	margin-left: 10px;
+}
+.two .rightContent .rightBottom .quote {
+	width: 160px;
+	height: 130px;
+	margin-top: 30px;
+	font: italic 14px/16px "黑体";
+	margin-right: 20px;
+}
+.two .rightContent .rightBottom .quote span {
+	font-size: 72px;
+	font-family: "黑体";
+	color: #d45d5c;
+}
+.two .rightContent .rightBottom .quote .quoL {
+	margin-right: 10px;
+}
+footer {
+	border-top: #938e8c 2px solid;
+	width: 100%;
+	text-align: right;
+	color: #d45d5c;
+	font: 12px "黑体";
+	margin-top: 20px;
+}
