@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+*{
+	padding:0;
+	border:0;
+	margin:0;
+}
+ul li{
+	list-style:none;
+}
+.flex-container{
+	height:500px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+	border:#000 1px solid;
+	width:700px;
+	justify-content:flex-start;/*主轴上的伸缩效果（以项目为单位）*/
+	align-items:center;/*侧轴上的伸缩效果（以项目为单位）*/
+	align-conent:flex-end;/*对齐每一行的伸缩项目（以行为单位）*/
+}
+.flex-container .flex-item{
+	text-align:center;
+	color:#fff;
+	font-size:20px;
+	margin:20px 10px;
+	
+}
+.flex-container .flex-item:nth-child(1){
+	width:100px;
+	height:80px;
+	line-height:80px;
+	background-color:#000;
+	flex-grow:10;
+}
+.flex-container .flex-item:nth-child(2){
+	width:30px;
+	height:40px;
+	line-height:40px;
+	background-color:#f00;
+	flex-grow:1;
+}
+.flex-container .flex-item:nth-child(3){
+	width:40px;
+	height:40px;
+	line-height:40px;
+	background-color:#a00;
+	flex-grow:1;
+}
+.flex-container .flex-item:nth-child(4){
+	width:60px;
+	height:100px;
+	line-height:100px;
+	background-color:#cece00;
+	flex-grow:1;
+}
+.flex-container .flex-item:nth-child(5){
+	width:100px;
+	height:300px;
+	line-height:100px;
+	background-color:#09F;
+	flex-grow:1;
+}
+.flex-container .flex-item:nth-child(6){
+	width:50px;
+	height:30px;
+	line-height:30px;
+	background-color:#606;
+	flex-grow:1;
+}
+</style>
+</head>
+
+<body>
+<ul class="flex-container">
+	<li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+    <li class="flex-item">6</li>
+</ul>
+</body>
+</html>
