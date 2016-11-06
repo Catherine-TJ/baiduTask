@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+<h3>污染城市列表</h3>
+<ul id="aqi-list"></ul>
+
+<script type="text/javascript">
+	var aqiData=[
+	["北京",90],
+	["上海",50],
+	["福州",10],
+	["广州",50],
+	["成都",90],
+	["西安",100]
+	];
+	
+	(function(){
+		var list=document.getElementById("aqi-list");
+		var dataArr=new Array();
+		for(var i=0;i<aqiData.length;i++)
+		{
+			if(aqiData[i][1]>60)
+			{
+				dataArr.push(aqiData[i]);
+			}
+			else
+			{
+				continue;
+			}
+		}
+		
+//			dataArr.sort();	
+//			dataArr.reverse();
+		
+		dataArr.sort(function(a,b){
+				return b[1]-a[1];
+			});
+		//bubbleSort(dataArr);
+		var number=["一","二","三","四","五","六","七","八","九","十"];
+		for(var x=0;x<=dataArr.length-1;x++)
+		{
+			var elementLi=document.createElement("li");
+			elementLi.innerHTML="第"+number[x]+"名："+dataArr[x];
+			list.appendChild(elementLi);
+		}
+		
+//		
+//		function bubbleSort(arr)
+//		{
+//			var i=arr.length,j;
+//			var temple;
+//			while(i>0)
+//			{
+//				for(j=0;j<i-1;j++)
+//				{
+//					if(arr[j][1]<arr[j+1][1])
+//					{
+//						temple=arr[j];
+//						arr[j]=arr[j+1];
+//						arr[j+1]=temple;
+//					}
+//				}	
+//				i--;
+//			}	
+//			return arr;
+//		}
+	})();
+</script>
+</body>
+</html>
