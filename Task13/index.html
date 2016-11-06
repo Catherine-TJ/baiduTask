@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+</head>
+
+<body onload="onloadFunc()">
+	<label>请输入北京今天空气质量：<input id="aqi-input" type="text" /></label>
+    <button id="button" onclick="submit()">确认填写</button>
+    
+    <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+    
+<script type="text/javascript">
+	var button=document.getElementById("button");
+	var dis=document.getElementById("aqi-display");
+	var input=document.getElementById("aqi-input");
+	function updateDisplay()
+	{
+		var inputValue=input.value;
+		if(inputValue==""||isNaN(inputValue)||inputValue<0||inputValue>1000)
+		{
+			alert("输入值为空或格式不正确！");		
+		}
+		else
+		{
+			dis.innerText=inputValue;		
+		}			
+	}
+	input.onkeyup=function(evt)
+	{
+		if(evt.keyCode==13)
+		{
+			updateDisplay();	
+		}	
+	}
+	function onloadFunc()
+	{
+		input.value="";	
+	}
+	
+
+</script>
+</body>
+</html>
