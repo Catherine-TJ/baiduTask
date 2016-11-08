@@ -21,6 +21,7 @@
 	var source=document.getElementById("source");
 	var resort=document.getElementById("resort");
 	var data=new Array();
+	var btn=document.getElementById("sort-btn");
 	function getData()
 	{	
 		for(var i=0;i<source.childElementCount;i++)
@@ -46,7 +47,6 @@
 			var text="<li>第"+number[i]+"名: "+data[i][0]+"空气质量：<b>"+data[i][1]+"</b></li>";
 			result.push(text);
 		}
-		console.log(result);
 		resort.innerHTML=result.join("");
 	}
 	function btnHandle()
@@ -54,12 +54,10 @@
 		var aqiData=getData();
 		aqiData=sortAqiData(aqiData);
 		render(aqiData);
-		var btn=document.getElementById("sort-btn");
 		btn.disabled=true;
 	}
 	function init()
 	{
-		var btn=document.getElementById("sort-btn");
 		btn.onclick=btnHandle;	
 	}
 	init();
